@@ -1,15 +1,19 @@
 # Welcome to My Poster Session
 
-Thank you for visiting my poster session! This repository contains the github repository for software implementation. Below are the link and a brief overview.
+Thank you for visiting my poster session! 
+
+This webpage contains the github repository for software implementation and the link for my manuscript.
+
+## 📝 Manuscript
+
+Link to the manuscript: [**MedRxiv Paper**](https://www.medrxiv.org/content/10.1101/2025.06.19.25329937v1)
 
 **Abstract:**  
-Polygenic Risk Scores (PRS) are critical tools for predicting disease risk, but their utility is often limited when the sample size is small. Transfer Learning for PRS (TL-PRS) [Zhao et al., 2022] aims to address this limitation by transferring knowledge from European PRS to other populations. However, TL-PRS depends on individual-level data, which is often unavailable due to privacy constraints. To overcome this challenge, we developed PTL-PRS (Pseudo-validated Transfer Learning for PRS), which integrates a novel pseudo-validation method [Zhang et al., 2021] into TL-PRS. PTL-PRS enables model validation without individual-level data by estimating pseudo-<i>R</i><sup>2</sup> using phenotype-genotype correlations from summary statistics, making it a privacy-friendly and computationally efficient solution for extending PRS applicability across different groups.
+Polygenic risk scores (PRSs) are essential tools for predicting individual phenotypic risk but often lack accuracy in non-European ancestry groups. Transfer Learning for Polygenic Risk Scores (TL-PRS) addresses this challenge by leveraging European PRSs to improve prediction in underrepresented ancestries but requires privacy-sensitive individual-level data and has low computational efficiency. Therefore, we introduce PTL-PRS (Pseudovalidated Transfer Learning for PRS), an extension of TL-PRS that incorporates pseudovalidation to eliminate the need for individual-level data and includes further software optimization. For pseudovalidation, PTL-PRS generates pseudo-summary statistics for training and validation and evaluates model performance with the pseudo-R metric. To improve computational efficiency, PTL-PRS software was optimized with C++, blockwise early stopping, and direct genotype retrieval. Overall, PTL-PRS enhances both prediction accuracy and software usability, helping underrepresented populations achieve more accurate genetic risk predictions.
 
 ## 💻 Software Repository
 
-Link to the repository:  
-
-[**GitHub Repository**](https://github.com/bokeumcho/PTL.PRS)
+Link to the repository: [**GitHub Repository**](https://github.com/bokeumcho/PTL.PRS)
 
 This repository contains the code used for the experiments and models discussed in the paper.  
 You can explore the details and try out the software here.
